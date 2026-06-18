@@ -1,0 +1,46 @@
+spring:
+  application:
+    name: aidoctordata
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/aidoctordata
+    username: root
+    password: your_mysql_password
+  ai:
+    openai:
+      api-key: "${DEEPSEEK_API_KEY:your_deepseek_api_key}"
+      base-url: https://api.deepseek.com
+      chat:
+        options:
+          model: deepseek-v4-flash
+    xunfei:
+      appid: your_xunfei_appid
+      apikey: your_xunfei_apikey
+      apisecret: your_xunfei_apisecret
+      ws-url: wss://spark-api.xf-yun.com/v3.1/chat
+      domain: generalv3
+      temperature: 0.5
+      max-tokens: 4096
+
+server:
+  port: 8081
+  address: 0.0.0.0
+  servlet:
+    encoding:
+      charset: UTF-8
+      enabled: true
+      force: true
+
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
+
+luckycola:
+  mail:
+    cola-key: your_cola_key
+    smtp-email: your_email@example.com
+    smtp-code: your_smtp_code
+    smtp-code-type: 163
+
+tavily:
+  api-key: your_tavily_api_key

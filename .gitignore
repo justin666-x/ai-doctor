@@ -1,0 +1,52 @@
+# Dependencies
+node_modules/
+.mvn/wrapper/maven-wrapper.jar
+
+# Build output
+target/
+dist/
+*.class
+*.jar
+*.war
+
+# IDE
+.idea/
+**/.idea/
+.vscode/
+*.iml
+
+# Config with secrets
+application.yml
+**/application.yml
+
+# OS
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Environment
+.env
+.env.local
+*.log
+
+# Uploads (user files)
+uploads/
+**/uploads/
+
+# Logs
+*.log
+
+# Java
+*.class
+*.jar
+*.war
+*.nar
+hs_err_pid*
+
+# Temp
+tmp/
+temp/
+*.tmp
+*.bak
+*.swp
+*~
